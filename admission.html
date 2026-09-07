@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admission Portal - Royal Heritage International School</title>
+
+    <link rel="stylesheet" href="./admission.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         ADMISSION HEADER
+    ========================= -->
+
+    <header class="admission-header">
+
+        <a href="./web2.html" class="back-home">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <div class="admission-title">
+
+            <img
+                src="./webimage1.png"
+                alt="Royal Heritage International School Logo"
+            >
+
+            <div>
+
+                <h1>
+                    ROYAL HERITAGE
+                </h1>
+
+                <p>
+                    INTERNATIONAL SCHOOL
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         ADMISSION INTRO
+    ========================= -->
+
+    <section class="admission-intro">
+
+        <p class="section-label">
+            ADMISSION PORTAL
+        </p>
+
+        <h2>
+            Begin Your Application
+        </h2>
+
+        <p>
+            Complete the application form below to apply for admission
+            into Royal Heritage International School.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         ADMISSION FORM
+    ========================= -->
+
+    <main class="admission-container">
+
+        <form action="#" method="post">
+
+
+            <!-- STUDENT INFORMATION -->
+
+            <section class="form-section">
+
+                <div class="form-heading">
+
+                    <span>01</span>
+
+                    <div>
+                        <h3>Student Information</h3>
+
+                        <p>
+                            Enter the student's personal information.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="student-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="student-name"
+                            name="student_name"
+                            placeholder="Enter student's full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="dob">
+                            Date of Birth
+                        </label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="date_of_birth"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select
+                            id="gender"
+                            name="gender"
+                            required
+                        >
+
+                            <option value="">
+                                Select gender
+                            </option>
+
+                            <option value="male">
+                                Male
+                            </option>
+
+                            <option value="female">
+                                Female
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="class">
+                            Class Applying For
+                        </label>
+
+                        <select
+                            id="class"
+                            name="class_applying"
+                            required
+                        >
+
+                            <option value="">
+                                Select class
+                            </option>
+
+                            <option value="creche">
+                                Creche
+                            </option>
+
+                            <option value="nursery">
+                                Nursery
+                            </option>
+
+                            <option value="primary">
+                                Primary
+                            </option>
+
+                            <option value="secondary">
+                                Secondary
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- PARENT / GUARDIAN INFORMATION -->
+
+            <section class="form-section">
+
+                <div class="form-heading">
+
+                    <span>02</span>
+
+                    <div>
+                        <h3>Parent / Guardian Information</h3>
+
+                        <p>
+                            Provide the parent or guardian's details.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="parent-name">
+                            Parent / Guardian Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="parent-name"
+                            name="parent_name"
+                            placeholder="Enter full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="parent-phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="parent-phone"
+                            name="parent_phone"
+                            placeholder="Enter phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="parent-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="parent-email"
+                            name="parent_email"
+                            placeholder="Enter email address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="relationship">
+                            Relationship to Student
+                        </label>
+
+                        <select
+                            id="relationship"
+                            name="relationship"
+                            required
+                        >
+
+                            <option value="">
+                                Select relationship
+                            </option>
+
+                            <option value="father">
+                                Father
+                            </option>
+
+                            <option value="mother">
+                                Mother
+                            </option>
+
+                            <option value="guardian">
+                                Guardian
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ADDRESS INFORMATION -->
+
+            <section class="form-section">
+
+                <div class="form-heading">
+
+                    <span>03</span>
+
+                    <div>
+                        <h3>Contact Information</h3>
+
+                        <p>
+                            Provide the student's residential details.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+
+                        <label for="address">
+                            Home Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter full home address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- PREVIOUS SCHOOL -->
+
+            <section class="form-section">
+
+                <div class="form-heading">
+
+                    <span>04</span>
+
+                    <div>
+                        <h3>Academic Information</h3>
+
+                        <p>
+                            Tell us about the student's previous education.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="previous-school">
+                            Previous School
+                        </label>
+
+                        <input
+                            type="text"
+                            id="previous-school"
+                            name="previous_school"
+                            placeholder="Enter previous school"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="current-class">
+                            Current Class
+                        </label>
+
+                        <input
+                            type="text"
+                            id="current-class"
+                            name="current_class"
+                            placeholder="Enter current class"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ADDITIONAL INFORMATION -->
+
+            <section class="form-section">
+
+                <div class="form-heading">
+
+                    <span>05</span>
+
+                    <div>
+                        <h3>Additional Information</h3>
+
+                        <p>
+                            Add any additional information about the student.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+
+                        <label for="message">
+                            Additional Information
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write any additional information here..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- TERMS -->
+
+            <div class="form-agreement">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        name="agreement"
+                        required
+                    >
+
+                    <span>
+                        I confirm that the information provided is correct
+                        and complete.
+                    </span>
+
+                </label>
+
+            </div>
+
+
+
+            <!-- SUBMIT -->
+
+            <div class="form-submit">
+
+                <button type="submit">
+
+                    Submit Application
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer class="admission-footer">
+
+        <p>
+            © 2026 Royal Heritage International School.
+            All rights reserved.
+        </p>
+
+        <a href="./web2.html">
+            Back to Website
+        </a>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    background: #f5f7fb;
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.admission-header {
+    min-height: 85px;
+    padding: 12px 7%;
+
+    background: #061a3a;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.back-home {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: #f5b82e;
+}
+
+
+/* =========================
+   ADMISSION TITLE
+========================= */
+
+.admission-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admission-title img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.admission-title h1 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.admission-title p {
+    margin: 2px 0 0;
+
+    color: white;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.admission-intro {
+    max-width: 800px;
+
+    margin: 60px auto 35px;
+
+    padding: 0 25px;
+
+    text-align: center;
+}
+
+.section-label {
+    margin: 0 0 8px;
+
+    color: #f5b82e;
+
+    font-size: 14px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+.admission-intro h2 {
+    margin: 0 0 12px;
+
+    color: #061a3a;
+
+    font-size: 40px;
+
+    line-height: 1.1;
+}
+
+.admission-intro > p:last-child {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.admission-container {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto 70px;
+}
+
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+    background: white;
+
+    margin-bottom: 25px;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   FORM HEADING
+========================= */
+
+.form-heading {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.form-heading > span {
+    min-width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #061a3a;
+    color: #f5b82e;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.form-heading h3 {
+    margin: 0 0 5px;
+
+    color: #061a3a;
+
+    font-size: 22px;
+}
+
+.form-heading p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+.form-group label {
+    color: #061a3a;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d7dce5;
+
+    border-radius: 6px;
+
+    background: white;
+
+    color: #222;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f5b82e;
+
+    box-shadow: 0 0 0 3px rgba(245, 184, 46, 0.12);
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 110px;
+}
+
+
+/* =========================
+   AGREEMENT
+========================= */
+
+.form-agreement {
+    margin: 25px 0;
+}
+
+.form-agreement label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+.form-agreement input {
+    margin-top: 3px;
+
+    accent-color: #f5b82e;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.form-submit {
+    text-align: center;
+}
+
+.form-submit button {
+    border: none;
+
+    padding: 15px 30px;
+
+    background: #f5b82e;
+    color: #061a3a;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.form-submit button i {
+    margin-left: 8px;
+}
+
+.form-submit button:hover {
+    background: #061a3a;
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.admission-footer {
+    padding: 25px 7%;
+
+    background: #031126;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.admission-footer p {
+    margin: 0;
+
+    color: #aab4c5;
+
+    font-size: 12px;
+}
+
+.admission-footer a {
+    color: #f5b82e;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.admission-footer a:hover {
+    color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .admission-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .admission-title {
+        order: -1;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .admission-intro h2 {
+        font-size: 32px;
+    }
+
+    .form-section {
+        padding: 25px;
+    }
+
+    .admission-footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .admission-container {
+        width: 94%;
+    }
+
+    .admission-intro {
+        margin-top: 40px;
+    }
+
+    .admission-intro h2 {
+        font-size: 28px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .form-heading h3 {
+        font-size: 19px;
+    }
+
+    .form-heading p {
+        font-size: 12px;
+    }
+
+    .form-submit button {
+        width: 100%;
+    }
+
+}
